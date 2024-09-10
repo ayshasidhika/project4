@@ -150,6 +150,7 @@
      transition: linear ease-in-out;
  }
 #about{
+    width: 100%;
     margin-top: 6rem;
     display: flex;
     flex-direction: column;
