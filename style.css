@@ -578,6 +578,7 @@
   .icon {
     font-size: -webkit-xxx-large;
     margin-top: -22px;
+    padding-right: 20px;
 }
   .main .box:hover .imgBox {
     transform: translate(-3.5rem, -3.5rem);
@@ -738,7 +739,10 @@
      list-style: none;
      padding: 0;
  }
-
+ 
+ .social-media i{
+    font-size: 3.5rem;
+ }
  .social-media li {
      display: inline;
      margin: 0 10px;
@@ -822,7 +826,8 @@
      .fa-x,
      .fa-bars {
          color: white;
-         font-size: 1.7rem;
+         font-size:51px;
+         margin: 10px;
      }
 
      .navbar:has(input[type="checkbox"]:checked) .navbar-links {
