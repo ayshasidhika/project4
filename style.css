@@ -298,14 +298,14 @@
     justify-content: space-around;
     padding: 0 48px;
     /* margin-top: 3rem; */
-    width: 80%;
+    /* width: 80%; */
     margin:  40px auto;
     align-items: center;
     text-align: center;
 
 }
 .row1,.row2,.row3,.row4{
-    width: 100%;
+    width: 30%;
 }
 .row1 h4{
     color: rgb(181, 47, 91);
@@ -438,7 +438,7 @@
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 80vh;
+    height: 62vh;
 }
 
 .apply-button {
@@ -558,7 +558,7 @@
   .main {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     background-color: #f0f0f0;
@@ -566,9 +566,9 @@
   
   .main .box {
     position: relative;
-    width: 30rem;
-    height: 30rem;
-    margin: 4rem;
+    width: 20rem;
+    height: 20rem;
+    margin: 3rem;
   }
   .icon {
     /* font-size: -webkit-xxx-large;
@@ -598,8 +598,8 @@
   }
   
   .imgBox img {
-    width: 30rem;
-    height: 30rem;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     resize: both;
   }
@@ -618,6 +618,7 @@
     align-items: flex-end;
     text-align: center;
     transition: 0.5s ease-in-out;
+   
   }
   
   .letter h2 {
@@ -634,6 +635,7 @@
     font-size: 1.4rem;
     font-weight: 300;
     letter-spacing: 2px;
+    font-family: "Edu VIC WA NT Beginner", cursive;
   }
   
   @media (max-width: 600px) {
@@ -651,14 +653,14 @@
     grid-gap: 10px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(8, 100px);
-    margin-top: 30px;
+    /* margin-top: 30px; */
     background-color: #e3e6f3;
 }
 
 .style img {
 
     width: 100%;
-    height: 100%;
+    height: 90%;
     object-fit: fill;
     border-top-right-radius: 24rem;
     border-top-left-radius: 24rem;
@@ -687,7 +689,8 @@
 
  .right h6 {
      font-size: 35px;
-     margin: 1.5rem;
+     padding: 20px;
+     margin: 3.5rem;
      text-align: center;
      color: rgb(181, 47, 91);
      text-transform: capitalize;
@@ -703,7 +706,7 @@
  
 
  footer {
-     margin-top: 4em;
+     /* margin-top: 4em; */
      background-color: rgb(214, 83, 127);
      color: #fff;
      padding: 20px;
@@ -925,11 +928,73 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-
+    .row1,.row2,.row3,.row4{
+        margin: 11px;
+        width: 100%;
+     }
 
  }
 
  @media only screen and (min-width: 575px) and (max-width: 768px) {
+    /* .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 0 10px 10px;
+        justify-content: space-between;
+
+
+    }
+
+    .navbar-center {
+        order: 1;
+    }
+
+    .navbar-links {
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.7rem;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .ham-icon {
+        display: block;
+        order: 2;
+    }
+
+    i.fa-solid.fa-x {
+        display: none;
+    }
+
+    .fa-x,
+    .fa-bars {
+        color: white;
+        font-size:51px;
+        margin: 10px;
+    }
+
+    .navbar:has(input[type="checkbox"]:checked) .navbar-links {
+        margin-top: 1rem;
+        height: 270px;
+    }
+
+    .navbar:has(input[type="checkbox"]:checked) .fa-bars {
+        display: none;
+    }
+
+    .navbar:has(input[type="checkbox"]:checked) .fa-x {
+        display: inline-block;
+    }
+
+    .navbar-links i {
+        display: none;
+    } */
+
      .banner {
          padding: 0px, 45px;
          font-size: 32px;
@@ -980,6 +1045,7 @@
  }
  .row1,.row2,.row3,.row4{
     margin: 11px;
+    width: 100%;
  }
 }
 
@@ -1024,8 +1090,16 @@
      .image-section img{
         height: 50vh;
      }
+     .section4 .rows {
+        display: flex;
+        flex-direction: column;
+        margin: 11px;
+     }
+     .row1, .row2, .row3, .row4 {
+        width: 30%;
+        margin: 12px;
  }
-
+ }
  @media (max-width: 740px) {
      .icon {
          display: none;
@@ -1071,4 +1145,24 @@
  .row1,.row2,.row3,.row4{
     margin: 11px;
  }
+}
+@media  only screen and (min-width:1500px) and (max-width:1930px){
+    .main .box {
+        width: 30rem;
+        height: 30rem;
+
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .news__grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .news__details h4 {
+        font-size: 55px;
+    }
+    .news__details p {
+        font-size: 47px;
+    }
 }
