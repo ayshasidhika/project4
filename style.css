@@ -154,7 +154,7 @@
  .gallery-item img {
      display: block;
      height: auto;
-     height: 70vh;
+     /* height: 70vh; */
      width: 45vh;
      border-radius: 8px;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -222,7 +222,7 @@
      grid-template-columns: repeat(3, 1fr);
      justify-content: center;
      grid-gap: 2rem;
-     width: 70vw;
+     /* width: 70vw; */
      place-items: center;
 
  }
@@ -880,7 +880,9 @@
          justify-content: center;
          padding: 0 35px;
      }
-
+     .text {
+        font-size: 25px;
+    }
      #fab {
          height: 48vh;
          width: 60%;
@@ -932,69 +934,12 @@
         margin: 11px;
         width: 100%;
      }
-
+     .imgBox img {
+        width: 100%;
+    }
  }
 
  @media only screen and (min-width: 575px) and (max-width: 768px) {
-    /* .navbar {
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 20px 0 10px 10px;
-        justify-content: space-between;
-
-
-    }
-
-    .navbar-center {
-        order: 1;
-    }
-
-    .navbar-links {
-        order: 3;
-        width: 100%;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-        gap: 0.7rem;
-        height: 0;
-        overflow: hidden;
-        padding: 0;
-    }
-
-    .ham-icon {
-        display: block;
-        order: 2;
-    }
-
-    i.fa-solid.fa-x {
-        display: none;
-    }
-
-    .fa-x,
-    .fa-bars {
-        color: white;
-        font-size:51px;
-        margin: 10px;
-    }
-
-    .navbar:has(input[type="checkbox"]:checked) .navbar-links {
-        margin-top: 1rem;
-        height: 270px;
-    }
-
-    .navbar:has(input[type="checkbox"]:checked) .fa-bars {
-        display: none;
-    }
-
-    .navbar:has(input[type="checkbox"]:checked) .fa-x {
-        display: inline-block;
-    }
-
-    .navbar-links i {
-        display: none;
-    } */
-
      .banner {
          padding: 0px, 45px;
          font-size: 32px;
@@ -1004,10 +949,7 @@
          height: 48vh;
          width: 90%;
      }
-     .section4 .rows{
-        display: flex;
-        flex-direction: column;
-    }
+     
 
      .news__grid {
          display: grid;
@@ -1047,6 +989,17 @@
     margin: 11px;
     width: 100%;
  }
+
+ .main .box{
+    width: 17rem;
+ }
+ .section4 .rows {
+    flex-wrap: wrap;
+}
+.imgBox img {
+    width: 100%;
+}
+
 }
 
  @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1078,7 +1031,7 @@
      }
      .style{
         display: grid;
-        grid-template-rows: repeat(9, 100px);
+        grid-template-rows: repeat(7, 100px);
         
      }
      .section h1{
@@ -1091,14 +1044,22 @@
         height: 50vh;
      }
      .section4 .rows {
-        display: flex;
-        flex-direction: column;
+        /* display: flex;
+        flex-direction: column; */
+        flex-wrap: wrap;
         margin: 11px;
      }
      .row1, .row2, .row3, .row4 {
         width: 30%;
         margin: 12px;
  }
+ .icon {
+    font-size: 19px;
+}
+.main .box {
+
+        width: 18rem;
+    }
  }
  @media (max-width: 740px) {
      .icon {
@@ -1124,9 +1085,27 @@
      .banner h1 {
          font-size: 30px;
      }
+     .right h6 {
+        margin: 10px;
+    }
+    .news__details p {
+            padding: 10px;
+    }
+    .word {
+        padding: 10px;
+    }
+    .section4 {
+    margin-top: 10px;
+    }
+    .heading h1 {
+        font-size: 45px;
+    }
+    /* .right {
+        grid-area: 41 / 1 / span 2 / span 10;
+    } */
 
  }
- @media  only screen and (min-width:360px) and (max-width:575px){
+ /* @media  only screen and (min-width:360px) and (max-width:575px){
  
   
     .section4 .rows{
@@ -1140,12 +1119,12 @@
         margin: 20px;
     }
     .imgBox img {
-        width: 20rem;
- }
+        width: 100%;
+    }
  .row1,.row2,.row3,.row4{
     margin: 11px;
  }
-}
+} */
 @media  only screen and (min-width:1500px) and (max-width:1930px){
     .main .box {
         width: 30rem;
@@ -1154,6 +1133,7 @@
     }
 
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .news__grid {
         display: grid;
@@ -1163,6 +1143,6 @@
         font-size: 55px;
     }
     .news__details p {
-        font-size: 47px;
+        font-size: 2rem;
     }
 }
